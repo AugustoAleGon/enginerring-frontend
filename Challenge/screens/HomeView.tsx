@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import {Gradient, Username} from '../components';
+import {Balance, Gradient, Username} from '../components';
 import SimpleLine from 'react-native-vector-icons/SimpleLineIcons';
 
 const HomeView = () => {
@@ -12,6 +12,15 @@ const HomeView = () => {
           <View style={styles.iconContainer}>
             <SimpleLine name="graduation" size={26} color={'#101820'} />
           </View>
+        </View>
+        <View>
+          <Balance
+            balance={850.64}
+            currency="USD"
+            earningFiat={20.23}
+            earningPercentage={2.03}
+            isMainPortfolio
+          />
         </View>
       </Gradient>
     </View>
@@ -27,6 +36,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingLeft: 28.13,
     paddingRight: 23,
+    paddingTop: 10,
   },
   iconContainer: {
     borderRadius: 16,
