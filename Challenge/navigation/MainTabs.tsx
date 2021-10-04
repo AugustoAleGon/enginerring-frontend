@@ -1,14 +1,17 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomeView from '../screens/HomeView';
-import VaultView from '../screens/VaultView';
-import SearchView from '../screens/SearchView';
-import AlertView from '../screens/AlertView';
-import ProfileView from '../screens/ProfileView';
 
 import Feather from 'react-native-vector-icons/Feather';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {
+  AlertView,
+  HomeView,
+  ProfileView,
+  SearchView,
+  VaultView,
+} from '../screens';
+
 import {colors} from '../utils';
 
 const Tab = createBottomTabNavigator();
